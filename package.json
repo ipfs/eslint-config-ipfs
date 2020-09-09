@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-ipfs",
+  "description": "ESLint Shareable Config for IPFS project",
+  "version": "0.0.1",
+  "bugs": {
+    "url": "https://github.com/ipfs/eslint-config-ipfs/issues"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/ipfs/eslint-config-ipfs",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "ipfs"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": ">=6.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/standard/eslint-config-standard.git"
+  },
+  "scripts": {
+    "lint": "eslint . --config=eslintrc.json",
+    "test": "npm run lint && tape test/*.js"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-no-only-tests": "^2.4.0",
+    "eslint-plugin-jsdoc": "^30.4.0"
+  }
+}
