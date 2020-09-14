@@ -9,7 +9,10 @@ module.exports = {
     self: true,
     mocha: true,
   },
-  plugins: ["no-only-tests", "jsdoc"],
+  plugins: [
+    "no-only-tests",
+    "jsdoc"
+  ],
   rules: {
     strict: [2, "safe"],
     curly: "error",
@@ -39,16 +42,42 @@ module.exports = {
     "require-yield": 2,
     "max-nested-callbacks": [2, 4],
     "max-depth": [2, 4],
-    "jsdoc/check-param-names": 1,
-    "jsdoc/check-syntax": 1,
-    "jsdoc/check-tag-names": 1,
-    "jsdoc/check-types": 1,
-    "jsdoc/implements-on-classes": 1,
+    "require-await": 2,
+    "jsdoc/check-alignment": 2,
+    "jsdoc/check-examples": 0,
+    "jsdoc/check-indentation": 2,
+    "jsdoc/check-param-names": 2,
+    "jsdoc/check-syntax": 2,
+    "jsdoc/check-tag-names": [2, { definedTags: ["internal", "packageDocumentation"] }],
+    "jsdoc/check-types": 2,
+    "jsdoc/implements-on-classes": 2,
+    "jsdoc/match-description": 0,
+    "jsdoc/newline-after-description": 2,
+    "jsdoc/no-types": 0,
+    // Note: no-undefined-types rule causes to many false positives:
+    // https://github.com/gajus/eslint-plugin-jsdoc/issues/559
+    // And it is also unaware of many built in types
+    // https://github.com/gajus/eslint-plugin-jsdoc/issues/280
+    "jsdoc/no-undefined-types": 1, 
     "jsdoc/require-returns-type": 0,
     "jsdoc/no-undefined-types": 1,
-    "jsdoc/require-hyphen-before-param-description": 1,
-    "jsdoc/require-param-type": 1,
-    "require-await": 2,
+    "jsdoc/require-description": 0,
+    "jsdoc/require-description-complete-sentence": 0,
+    "jsdoc/require-example": 0,
+    "jsdoc/require-hyphen-before-param-description": 2,
+    "jsdoc/require-jsdoc": 0,
+    "jsdoc/require-param": 2,
+    "jsdoc/require-param-description": 1,
+    "jsdoc/require-param-name": 2,
+    "jsdoc/require-param-type": 2,
+    // Note: Do not require @returns because TS often can infer return types and
+    // in many such cases it's not worth it.
+    "jsdoc/require-returns": 0,
+    "jsdoc/require-returns-check": 2,
+    "jsdoc/require-returns-description": 1,
+    "jsdoc/require-returns-type": 2,
+    "jsdoc/valid-types": 2
+
   },
   settings: {
     jsdoc: {
