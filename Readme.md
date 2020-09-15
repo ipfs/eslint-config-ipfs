@@ -1,7 +1,7 @@
 # eslint-config-ipfs
 
 ![Node.js CI][node.js ci]
-[![package][version.icon] ![downloads][downloads.icon]][package.url]
+[![package][version.icon]][package.url]
 [![styled with prettier][prettier.icon]][prettier.url]
 
 This package provides IPFS's .eslintrc as an extensible shared config.
