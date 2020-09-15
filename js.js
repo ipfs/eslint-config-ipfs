@@ -75,12 +75,27 @@ module.exports = {
     "jsdoc/require-returns-check": 2,
     "jsdoc/require-returns-description": 1,
     "jsdoc/require-returns-type": 2,
-    "jsdoc/valid-types": 2
+     // Note: At the moment type parser used by eslint-plugin-jsdoc does not
+     // parse various forms correctly. For now warn on invalid type froms,
+     // should revisit once following issue is fixed:
+     // https://github.com/jsdoctypeparser/jsdoctypeparser/issues/50
+    "jsdoc/valid-types": 1
 
   },
   settings: {
     jsdoc: {
       mode: "typescript",
-    },
-  },
+      tagNamePreference: {
+        augments: {
+          message: "@extends is to be used over @augments as it is more evocative of classes than @augments",
+          replacement: "extends",
+        }
+      },
+      structuredTags: {
+        extends: {
+          type: true
+        }
+      }
+    }
+  }
 }
