@@ -38,7 +38,3 @@ If you do not have `.ts` files in your tree chances are you don't care about typ
 [prettier.url]: https://github.com/prettier/prettier
 [ts-jsdoc]: https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
 [aegir]: https://github.com/ipfs/aegir "Automated JavaScript project management."
-
-```
-
-```
