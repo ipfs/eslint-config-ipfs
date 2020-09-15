@@ -60,7 +60,6 @@ module.exports = {
     // https://github.com/gajus/eslint-plugin-jsdoc/issues/280
     "jsdoc/no-undefined-types": 1, 
     "jsdoc/require-returns-type": 0,
-    "jsdoc/no-undefined-types": 1,
     "jsdoc/require-description": 0,
     "jsdoc/require-description-complete-sentence": 0,
     "jsdoc/require-example": 0,
