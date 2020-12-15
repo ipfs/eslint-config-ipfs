@@ -1,14 +1,21 @@
-"use strict"
+'use strict'
 
 module.exports = {
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    sourceType: "module",
+    sourceType: 'module',
+    project: './tsconfig.json' // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#parseroptionsproject
   },
-  plugins: ["@typescript-eslint"],
-  extends: ["./js", "plugin:@typescript-eslint/recommended"],
+  extends: [
+    './js',
+    'standard-with-typescript'
+  ],
+  plugins: [
+    'etc'
+  ],
   rules: {
-    // Types often are recursive & no use before define is too restrctive
-    "no-use-before-define": 0
+    'no-use-before-define': 'off', // Types often are recursive & no use before define is too restrctive
+    'etc/prefer-interface': 'error', // https://ncjamieson.com/prefer-interfaces/
+    '@typescript-eslint/prefer-function-type': 'off' // conflicts with 'etc/prefer-interface'
   }
 }
