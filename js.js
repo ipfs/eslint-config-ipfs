@@ -67,7 +67,7 @@ module.exports = {
     // in many such cases it's not worth it.
     'jsdoc/require-returns': 'off',
     'jsdoc/require-returns-check': 'error',
-    'jsdoc/require-returns-description': 'warn',
+    'jsdoc/require-returns-description': 'off',
     // Note: At the moment type parser used by eslint-plugin-jsdoc does not
     // parse various forms correctly. For now warn on invalid type froms,
     // should revisit once following issue is fixed:
