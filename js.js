@@ -7,7 +7,8 @@ module.exports = {
   },
   globals: {
     self: true,
-    mocha: true
+    mocha: true,
+    globalThis: false // means it is not writable
   },
   plugins: [
     'no-only-tests',
