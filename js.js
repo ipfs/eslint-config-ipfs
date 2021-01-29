@@ -5,10 +5,10 @@ module.exports = {
   parserOptions: {
     sourceType: 'script'
   },
-  globals: {
-    self: 'writable',
-    mocha: 'writable',
-    globalThis: 'readonly'
+  env: {
+    es2020: true,
+    browser: true,
+    node: true
   },
   plugins: [
     'no-only-tests',
