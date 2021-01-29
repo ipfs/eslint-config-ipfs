@@ -6,9 +6,9 @@ module.exports = {
     sourceType: 'script'
   },
   globals: {
-    self: true,
-    mocha: true,
-    globalThis: false // means it is not writable
+    self: 'writable',
+    mocha: 'writable',
+    globalThis: 'readonly'
   },
   plugins: [
     'no-only-tests',
