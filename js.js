@@ -5,9 +5,10 @@ module.exports = {
   parserOptions: {
     sourceType: 'script'
   },
-  globals: {
-    self: true,
-    mocha: true
+  env: {
+    es2020: true,
+    browser: true,
+    node: true
   },
   plugins: [
     'no-only-tests',
