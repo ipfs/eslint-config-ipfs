@@ -1,7 +1,13 @@
 'use strict'
 
-module.exports = {
-  extends: 'standard',
+const fs = require('fs')
+const { join } = require('path')
+
+/** @type {Record<string, any>} */
+const config = {
+  extends: [
+    'standard'
+  ],
   parserOptions: {
     sourceType: 'script'
   },
@@ -93,3 +99,20 @@ module.exports = {
     }
   }
 }
+
+const tsconfig = join(process.cwd(), 'tsconfig.json')
+
+if (fs.existsSync(tsconfig)) {
+  config.extends.push('plugin:@typescript-eslint/recommended')
+  config.parserOptions.project = tsconfig
+  config.plugins.push('@typescript-eslint')
+  config.rules = {
+    '@typescript-eslint/no-var-requires': 'warn',
+    '@typescript-eslint/no-empty-function': 'warn',
+    '@typescript-eslint/ban-ts-comment': 'warn',
+    '@typescript-eslint/no-floating-promises': 'error',
+    ...config.rules
+  }
+}
+
+module.exports = config

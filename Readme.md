@@ -29,6 +29,14 @@ If you do not have `.ts` files in your tree chances are you don't care about typ
 }
 ```
 
+### tsconfig.json
+
+If a `tsconfig.json` is detected in your project, additional rules will be enabled including detection of floating promises.
+
+If these rules are enabled, all linted code must be included in the `"include"` field of your `tsconfig.json` file.
+
+Note that this means you cannot skip including types for your tests if you want to lint them as well.
+
 [node.js ci]: https://github.com/ipfs/eslint-config-ipfs/workflows/Node.js%20CI/badge.svg
 [version.icon]: https://img.shields.io/npm/v/eslint-config-ipfs.svg
 [package.url]: https://npmjs.org/package/eslint-config-ipfs
