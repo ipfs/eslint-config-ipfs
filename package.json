@@ -28,9 +28,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0"
   },
-  "peerDependencies": {
-    "eslint": ">=6.2.2"
-  },
   "devDependencies": {
     "eslint": "^7.15.0",
     "tape": "^5.0.1",
