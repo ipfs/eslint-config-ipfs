@@ -17,11 +17,11 @@
     "test": "tape test/*.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-config-standard-with-typescript": "^21.0.1",
-    "eslint-plugin-etc": "^1.1.7",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "git+https://github.com/standard/eslint-config-standard-with-typescript.git",
+    "eslint-plugin-etc": "^2.0.2",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsdoc": "^39.2.9",
     "eslint-plugin-no-only-tests": "^2.4.0",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "eslint": "^8.15.0",
-    "tape": "^5.0.1",
+    "tape": "^5.5.3",
     "typescript": "*"
   },
   "peerDependenciesMeta": {
