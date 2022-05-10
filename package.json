@@ -23,13 +23,13 @@
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-etc": "^1.1.7",
     "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsdoc": "^36.0.8",
+    "eslint-plugin-jsdoc": "^39.2.9",
     "eslint-plugin-no-only-tests": "^2.4.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0"
+    "eslint-plugin-promise": "^6.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.15.0",
+    "eslint": "^8.15.0",
     "tape": "^5.0.1",
     "typescript": "*"
   },
@@ -43,6 +43,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/standard/eslint-config-standard.git"
+    "url": "git://github.com/ipfs/eslint-config-ipfs.git"
   }
 }
