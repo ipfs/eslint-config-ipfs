@@ -19,6 +19,7 @@ module.exports = {
     '@typescript-eslint/prefer-function-type': 'off', // conflicts with 'etc/prefer-interface'
     '@typescript-eslint/explicit-function-return-type': 'off', // allow compiler to derive return type
     '@typescript-eslint/no-this-alias': 'off', // allow 'const self = this'
+    '@typescript-eslint/await-thenable': 'error', // disallows awaiting a value that is not a "Thenable"
     'jsdoc/require-param': 'off', // do not require jsdoc for params
     'jsdoc/require-param-type': 'off' // allow compiler to derive param type
   }
