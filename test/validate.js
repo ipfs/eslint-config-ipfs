@@ -2,8 +2,6 @@ const eslint = require("eslint")
 const test = require("tape")
 const eslintrc = require("..")
 
-console.info(eslint)
-
 test("load config in eslint to validate all rule syntax is correct", async function (t) {
   var cli = new eslint.ESLint({
     useEslintrc: false,
