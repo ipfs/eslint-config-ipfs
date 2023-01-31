@@ -11,7 +11,8 @@ module.exports = {
     'standard-with-typescript'
   ],
   plugins: [
-    'etc'
+    'etc',
+    'import'
   ],
   rules: {
     'no-use-before-define': 'off', // Types often are recursive & no use before define is too restrictive
@@ -22,6 +23,45 @@ module.exports = {
     '@typescript-eslint/await-thenable': 'error', // disallows awaiting a value that is not a "Thenable"
     '@typescript-eslint/restrict-template-expressions': 'off', // allow values with `any` type in template literals
     'jsdoc/require-param': 'off', // do not require jsdoc for params
-    'jsdoc/require-param-type': 'off' // allow compiler to derive param type
+    'jsdoc/require-param-type': 'off', // allow compiler to derive param type
+    'import/order': [ // sort imports
+      'error',
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false
+        },
+        'newlines-between': 'always',
+        // the overall order of imports
+        groups: ['builtin', 'external', 'internal', ['sibling', 'parent', 'index'], 'object'],
+        pathGroupsExcludedImportTypes: ['builtin'],
+        pathGroups: [
+          { // 3p imports
+            pattern: '+(!(@))*/**',
+            group: 'external',
+            position: 'before',
+            patternOptions: { nonegate: true }
+          },
+          { // scoped external imports excluding our 2p scoped packages
+            pattern: '@!(ipfs|libp2p|ipfs-shipyard|ipld|multiformats)/**',
+            group: 'external',
+            position: 'after',
+            patternOptions: { nonegate: false }
+          },
+          { // our 2p scoped packages
+            pattern: '@{ipfs,libp2p,ipfs-shipyard,ipld,multiformats}/**',
+            group: 'parent',
+            position: 'before',
+            patternOptions: { nonegate: true }
+          },
+          { // our relative (this package) imports
+            pattern: '.*/**',
+            group: 'index',
+            position: 'after',
+            patternOptions: { dot: true, nonegate: true }
+          }
+        ]
+      }
+    ]
   }
 }

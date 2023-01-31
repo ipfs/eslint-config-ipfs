@@ -12,7 +12,8 @@ module.exports = {
   },
   plugins: [
     'no-only-tests',
-    'jsdoc'
+    'jsdoc',
+    'import'
   ],
   rules: {
     strict: ['error', 'safe'],
@@ -73,8 +74,46 @@ module.exports = {
     // parse various forms correctly. For now warn on invalid type froms,
     // should revisit once following issue is fixed:
     // https://github.com/jsdoctypeparser/jsdoctypeparser/issues/50
-    'jsdoc/valid-types': 'off'
-
+    'jsdoc/valid-types': 'off',
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false
+        },
+        'newlines-between': 'always',
+        // the overall order of imports
+        groups: ['builtin', 'external', 'internal', ['sibling', 'parent', 'index'], 'object'],
+        pathGroupsExcludedImportTypes: ['builtin'],
+        pathGroups: [
+          { // 3p imports
+            pattern: '+(!(@))*/**',
+            group: 'external',
+            position: 'before',
+            patternOptions: { nonegate: true }
+          },
+          { // scoped external imports excluding our 2p scoped packages
+            pattern: '@!(ipfs|libp2p|ipfs-shipyard|ipld|multiformats)/**',
+            group: 'external',
+            position: 'after',
+            patternOptions: { nonegate: false }
+          },
+          { // our 2p scoped packages
+            pattern: '@{ipfs,libp2p,ipfs-shipyard,ipld,multiformats}/**',
+            group: 'parent',
+            position: 'before',
+            patternOptions: { nonegate: true }
+          },
+          { // our relative (this package) imports
+            pattern: '.*/**',
+            group: 'index',
+            position: 'after',
+            patternOptions: { dot: true, nonegate: true }
+          }
+        ]
+      }
+    ]
   },
   settings: {
     jsdoc: {
