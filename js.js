@@ -24,7 +24,6 @@ module.exports = {
     'linebreak-style': ['warn', 'unix'],
     'no-alert': 'error',
     'no-console': 'error',
-    'no-continue': 'warn',
     'no-div-regex': 'error',
     'no-empty': 'warn',
     'no-extra-semi': 'error',
