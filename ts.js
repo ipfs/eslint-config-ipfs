@@ -16,11 +16,12 @@ module.exports = {
   rules: {
     'no-use-before-define': 'off', // Types often are recursive & no use before define is too restrictive
     'etc/prefer-interface': 'error', // https://ncjamieson.com/prefer-interfaces/
-    '@typescript-eslint/prefer-function-type': 'off', // conflicts with 'etc/prefer-interface'
+    '@typescript-eslint/await-thenable': 'error', // disallows awaiting a value that is not a "Thenable"
     '@typescript-eslint/explicit-function-return-type': 'error', // functions require return types
     '@typescript-eslint/no-this-alias': 'off', // allow 'const self = this'
-    '@typescript-eslint/await-thenable': 'error', // disallows awaiting a value that is not a "Thenable"
+    '@typescript-eslint/prefer-function-type': 'off', // conflicts with 'etc/prefer-interface'
     '@typescript-eslint/restrict-template-expressions': 'off', // allow values with `any` type in template literals
+    '@typescript-eslint/return-await': 'error', // disallows unnecessary return await
     'jsdoc/require-param': 'off', // do not require jsdoc for params
     'jsdoc/require-param-type': 'off' // allow compiler to derive param type
   }

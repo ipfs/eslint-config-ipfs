@@ -30,6 +30,7 @@ module.exports = {
     'no-implicit-coercion': 'error',
     'no-loop-func': 'error',
     'no-nested-ternary': 'warn',
+    'no-return-await': 'off',
     'no-script-url': 'error',
     'no-warning-comments': 'warn',
     'max-nested-callbacks': ['error', 4],
