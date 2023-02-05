@@ -34,6 +34,7 @@ module.exports = {
     'no-warning-comments': 'warn',
     'max-nested-callbacks': ['error', 4],
     'max-depth': ['error', 4],
+    'max-len': ['error', 120],
     'require-yield': 'error',
     // plugins
     'no-only-tests/no-only-tests': 'error',
