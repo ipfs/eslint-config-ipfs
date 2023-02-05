@@ -37,6 +37,7 @@ module.exports = {
     'max-depth': ['error', 4],
     'max-len': ['error', 120],
     'require-yield': 'error',
+    'yield-star-spacing': ['error', 'after'],
     // plugins
     'no-only-tests/no-only-tests': 'error',
     'jsdoc/check-alignment': 'error',
