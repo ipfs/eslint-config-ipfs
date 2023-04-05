@@ -12,7 +12,8 @@ module.exports = {
   },
   plugins: [
     'no-only-tests',
-    'jsdoc'
+    'jsdoc',
+    'import'
   ],
   rules: {
     strict: ['error', 'safe'],
@@ -72,8 +73,19 @@ module.exports = {
     // parse various forms correctly. For now warn on invalid type froms,
     // should revisit once following issue is fixed:
     // https://github.com/jsdoctypeparser/jsdoctypeparser/issues/50
-    'jsdoc/valid-types': 'off'
-
+    'jsdoc/valid-types': 'off',
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false
+        },
+        'newlines-between': 'always',
+        // the overall order of imports - anything not in this list is grouped together at the end
+        groups: ['builtin', 'external', 'type']
+      }
+    ]
   },
   settings: {
     jsdoc: {
