@@ -7,7 +7,7 @@ module.exports = {
     project: './tsconfig.json' // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#parseroptionsproject
   },
   extends: [
-    './js',
+    './js.js',
     'standard-with-typescript'
   ],
   plugins: [

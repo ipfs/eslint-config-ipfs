@@ -1,20 +1,125 @@
 {
   "name": "eslint-config-ipfs",
+  "version": "3.1.7",
   "description": "ESLint Shareable Config for IPFS project",
-  "version": "0.0.0-dev",
+  "license": "Apache-2.0 OR MIT",
+  "homepage": "https://github.com/ipfs/eslint-config-ipfs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs/eslint-config-ipfs.git"
+  },
   "bugs": {
     "url": "https://github.com/ipfs/eslint-config-ipfs/issues"
   },
-  "homepage": "https://github.com/ipfs/eslint-config-ipfs",
   "keywords": [
     "eslint",
     "eslintconfig",
     "ipfs"
   ],
-  "license": "(Apache-2.0 AND MIT)",
-  "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "eslintConfig": {
+    "extends": "."
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "breaking": true,
+              "release": "major"
+            },
+            {
+              "revert": true,
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            },
+            {
+              "type": "deps",
+              "release": "patch"
+            },
+            {
+              "scope": "no-release",
+              "release": false
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "chore",
+                "section": "Trivial Changes"
+              },
+              {
+                "type": "docs",
+                "section": "Documentation"
+              },
+              {
+                "type": "deps",
+                "section": "Dependencies"
+              },
+              {
+                "type": "test",
+                "section": "Tests"
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
+  },
   "scripts": {
-    "test": "tape test/*.js"
+    "clean": "aegir clean",
+    "lint": "aegir lint",
+    "dep-check": "aegir dep-check",
+    "test": "npm run test:node",
+    "test:node": "aegir test -t node",
+    "release": "aegir release"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.23.0",
@@ -29,6 +134,7 @@
     "eslint-plugin-promise": "^6.0.0"
   },
   "devDependencies": {
+    "aegir": "^38.1.8",
     "eslint": "^8.15.0",
     "tape": "^5.5.3",
     "typescript": "*"
@@ -37,12 +143,5 @@
     "typescript": {
       "optional": true
     }
-  },
-  "eslintConfig": {
-    "extends": "."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ipfs/eslint-config-ipfs.git"
   }
 }
