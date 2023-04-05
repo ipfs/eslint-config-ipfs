@@ -1,9 +1,11 @@
 /* eslint-env mocha */
 'use strict'
 
-const eslint = require('eslint')
-const eslintrc = require('..')
 const path = require('path')
+
+const eslint = require('eslint')
+
+const eslintrc = require('..')
 
 describe('validate', () => {
   let expect
