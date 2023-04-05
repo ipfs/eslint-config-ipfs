@@ -4,11 +4,11 @@ module.exports = {
   overrides: [
     {
       files: ['*.js'],
-      extends: './js'
+      extends: './js.js'
     },
     {
       files: ['*.ts'],
-      extends: './ts'
+      extends: './ts.js'
     }
   ]
 }
