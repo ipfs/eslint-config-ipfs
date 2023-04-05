@@ -14,7 +14,8 @@
   "license": "(Apache-2.0 AND MIT)",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "npm run test:node",
+    "test:node": "tape test/*.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.23.0",
