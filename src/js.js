@@ -81,9 +81,9 @@ module.exports = {
           order: 'asc',
           caseInsensitive: false
         },
-        'newlines-between': 'always',
+        'newlines-between': 'never',
         // the overall order of imports - anything not in this list is grouped together at the end
-        groups: ['builtin', 'external', 'type']
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type']
       }
     ]
   },
