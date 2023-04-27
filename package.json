@@ -115,7 +115,6 @@
   },
   "scripts": {
     "clean": "aegir clean",
-    "lint": "aegir lint",
     "dep-check": "aegir dep-check",
     "test": "npm run test:node",
     "test:node": "aegir test -t node",
