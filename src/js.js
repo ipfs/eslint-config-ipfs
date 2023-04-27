@@ -47,7 +47,7 @@ module.exports = {
     'jsdoc/check-types': 'error',
     'jsdoc/implements-on-classes': 'error',
     'jsdoc/match-description': 'off',
-    'jsdoc/newline-after-description': 'error',
+    'jsdoc/tag-lines': ['error', 'any', { startLines: 1 }],
     'jsdoc/no-types': 'off',
     // Note: no-undefined-types rule causes to many false positives:
     // https://github.com/gajus/eslint-plugin-jsdoc/issues/559
