@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/ipfs/eslint-config-ipfs/compare/v4.0.1...v4.0.2) (2023-04-27)
+
+
+### Bug Fixes
+
+* remove import newlines and specify all groups ([#149](https://github.com/ipfs/eslint-config-ipfs/issues/149)) ([70bc250](https://github.com/ipfs/eslint-config-ipfs/commit/70bc2500e15124901c4ae95af8c74c6b3e780107))
+
 ## [4.0.1](https://github.com/ipfs/eslint-config-ipfs/compare/v4.0.0...v4.0.1) (2023-04-27)
 
 
