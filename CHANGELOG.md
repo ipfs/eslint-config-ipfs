@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/ipfs/eslint-config-ipfs/compare/v4.0.2...v4.0.3) (2023-05-11)
+
+
+### Dependencies
+
+* **dev:** bump aegir from 38.1.8 to 39.0.6 ([#156](https://github.com/ipfs/eslint-config-ipfs/issues/156)) ([37f2f4e](https://github.com/ipfs/eslint-config-ipfs/commit/37f2f4ed5d9324a521a5f7d1b1e4b6d9758a5ce7))
+
 ## [4.0.2](https://github.com/ipfs/eslint-config-ipfs/compare/v4.0.1...v4.0.2) (2023-04-27)
 
 
