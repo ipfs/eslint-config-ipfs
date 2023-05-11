@@ -2,9 +2,7 @@
 'use strict'
 
 const path = require('path')
-
 const eslint = require('eslint')
-
 const eslintrc = require('..')
 
 describe('validate', () => {
