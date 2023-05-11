@@ -115,7 +115,7 @@
   },
   "scripts": {
     "clean": "aegir clean",
-    "dep-check": "aegir dep-check",
+    "dep-check": "aegir dep-check -i @typescript-eslint/eslint-plugin -i @typescript-eslint/parser",
     "test": "npm run test:node",
     "test:node": "aegir test -t node",
     "release": "aegir release"
@@ -134,9 +134,7 @@
   },
   "devDependencies": {
     "aegir": "^39.0.6",
-    "eslint": "^8.15.0",
-    "tape": "^5.5.3",
-    "typescript": "*"
+    "eslint": "^8.15.0"
   },
   "peerDependenciesMeta": {
     "typescript": {
