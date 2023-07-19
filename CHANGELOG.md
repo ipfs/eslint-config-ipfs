@@ -1,3 +1,22 @@
+## [5.0.0](https://github.com/ipfs/eslint-config-ipfs/compare/v4.0.3...v5.0.0) (2023-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* bump eslint-plugin-jsdoc from 43.2.0 to 46.4.4 (#176)
+
+### Trivial Changes
+
+* restore linting ([#148](https://github.com/ipfs/eslint-config-ipfs/issues/148)) ([b222ba7](https://github.com/ipfs/eslint-config-ipfs/commit/b222ba7221bffda51e66e4c3de5b98a36659bf4b))
+* Update .github/workflows/stale.yml [skip ci] ([b77e8e7](https://github.com/ipfs/eslint-config-ipfs/commit/b77e8e75456346245fd5854b62399e9dc86a2d02))
+* Update .github/workflows/stale.yml [skip ci] ([fec2f8f](https://github.com/ipfs/eslint-config-ipfs/commit/fec2f8ffde1021e1e4224738e60f431b57970e74))
+
+
+### Dependencies
+
+* bump eslint-config-standard-with-typescript from 34.0.1 to 36.1.0 ([#175](https://github.com/ipfs/eslint-config-ipfs/issues/175)) ([2caff0a](https://github.com/ipfs/eslint-config-ipfs/commit/2caff0aabb9e5c4316a4c8e69c644d288e5fd8b6))
+* bump eslint-plugin-jsdoc from 43.2.0 to 46.4.4 ([#176](https://github.com/ipfs/eslint-config-ipfs/issues/176)) ([4768f37](https://github.com/ipfs/eslint-config-ipfs/commit/4768f37f13b3fde42f394333ec6af134113e3d24))
+
 ## [4.0.3](https://github.com/ipfs/eslint-config-ipfs/compare/v4.0.2...v4.0.3) (2023-05-11)
 
 
