@@ -1,3 +1,11 @@
+## [5.0.1](https://github.com/ipfs/eslint-config-ipfs/compare/v5.0.0...v5.0.1) (2023-07-26)
+
+
+### Dependencies
+
+* bump eslint-config-standard-with-typescript from 36.1.1 to 37.0.0 ([#179](https://github.com/ipfs/eslint-config-ipfs/issues/179)) ([51d369c](https://github.com/ipfs/eslint-config-ipfs/commit/51d369c9ebf1fd4c7b4946c68a9158b9d78f02e9))
+* **dev:** bump aegir from 39.0.13 to 40.0.0 ([#178](https://github.com/ipfs/eslint-config-ipfs/issues/178)) ([42155e8](https://github.com/ipfs/eslint-config-ipfs/commit/42155e836dad27f1654a26661f6005ea4f03b7f9))
+
 ## [5.0.0](https://github.com/ipfs/eslint-config-ipfs/compare/v4.0.3...v5.0.0) (2023-07-19)
 
 
