@@ -1,3 +1,28 @@
+## [6.0.0](https://github.com/ipfs/eslint-config-ipfs/compare/v5.0.1...v6.0.0) (2023-09-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* All interfaces now need to use method signature style rather than property function style
+
+eg:
+before
+```ts
+interface Foo {
+  bar: (baz: number) => void
+}
+```
+after
+```ts
+interface Foo {
+  bar(baz: number): void
+}
+```
+
+### Features
+
+* add method-signature-style rule ([#190](https://github.com/ipfs/eslint-config-ipfs/issues/190)) ([8823186](https://github.com/ipfs/eslint-config-ipfs/commit/88231860087f4ff4f7c8118a84c8f64bcc81f7d0))
+
 ## [5.0.1](https://github.com/ipfs/eslint-config-ipfs/compare/v5.0.0...v5.0.1) (2023-07-26)
 
 
