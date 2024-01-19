@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/ipfs/eslint-config-ipfs/compare/v6.0.0...v6.0.1) (2024-01-19)
+
+
+### Dependencies
+
+* **dev:** bump aegir from 40.0.13 to 42.2.2 ([#203](https://github.com/ipfs/eslint-config-ipfs/issues/203)) ([ba17326](https://github.com/ipfs/eslint-config-ipfs/commit/ba173267e7c727a19a6c4ea8ec67cc73f677c0ef))
+
 ## [6.0.0](https://github.com/ipfs/eslint-config-ipfs/compare/v5.0.1...v6.0.0) (2023-09-29)
 
 
