@@ -26,7 +26,11 @@
     "dist"
   ],
   "eslintConfig": {
-    "extends": "."
+    "extends": "./src/index.js",
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
   },
   "release": {
     "branches": [
@@ -115,7 +119,7 @@
   },
   "scripts": {
     "clean": "aegir clean",
-    "lint": "aegir lint",
+    "lint": "eslint src",
     "dep-check": "aegir dep-check -i @typescript-eslint/eslint-plugin -i @typescript-eslint/parser",
     "test": "npm run test:node",
     "test:node": "aegir test -t node",
