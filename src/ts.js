@@ -22,6 +22,8 @@ module.exports = {
     '@typescript-eslint/await-thenable': 'error', // disallows awaiting a value that is not a "Thenable"
     '@typescript-eslint/restrict-template-expressions': 'off', // allow values with `any` type in template literals
     '@typescript-eslint/method-signature-style': ['error', 'method'], // enforce method signature style
+    "no-unused-vars": "off", // disable this rule to use @typescript-eslint/no-unused-vars instead
+    "@typescript-eslint/no-unused-vars": "error", // disallow unused variables
     'no-return-await': 'off', // disable this rule to use @typescript-eslint/return-await instead
     '@typescript-eslint/return-await': ['error', 'in-try-catch'], // require awaiting thenables returned from try/catch
     'jsdoc/require-param': 'off', // do not require jsdoc for params
