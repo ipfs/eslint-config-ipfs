@@ -8,7 +8,7 @@ module.exports = {
   },
   extends: [
     './js.js',
-    'standard-with-typescript'
+    'love'
   ],
   plugins: [
     'etc'
