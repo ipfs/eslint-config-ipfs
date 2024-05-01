@@ -1,3 +1,15 @@
+## [6.0.2](https://github.com/ipfs/eslint-config-ipfs/compare/v6.0.1...v6.0.2) (2024-05-01)
+
+
+### Bug Fixes
+
+* use @typescript-eslint/no-unused-vars ([#221](https://github.com/ipfs/eslint-config-ipfs/issues/221)) ([9a95776](https://github.com/ipfs/eslint-config-ipfs/commit/9a957762f5fc9123cd4265fe6204f0fb40c3da0c)), closes [/github.com/standard/eslint-config-standard/blob/master/src/index.ts#L143](https://github.com/ipfs//github.com/standard/eslint-config-standard/blob/master/src/index.ts/issues/L143)
+
+
+### Trivial Changes
+
+* Update .github/workflows/stale.yml [skip ci] ([1f9ebc6](https://github.com/ipfs/eslint-config-ipfs/commit/1f9ebc65974d1ffb210234e7d4ba9cefaa0d6176))
+
 ## [6.0.1](https://github.com/ipfs/eslint-config-ipfs/compare/v6.0.0...v6.0.1) (2024-01-19)
 
 
