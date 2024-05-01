@@ -1,3 +1,14 @@
+## [7.0.0](https://github.com/ipfs/eslint-config-ipfs/compare/v6.0.2...v7.0.0) (2024-05-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* eslint-config-love requires updated peer dependencies
+
+### Dependencies
+
+* upgrade deps, replace eslint-config-standard-with-typescript with eslint-config-love ([#218](https://github.com/ipfs/eslint-config-ipfs/issues/218)) ([a83be5b](https://github.com/ipfs/eslint-config-ipfs/commit/a83be5bd51eee32c7a8218912ba3c2f22c1eae1c)), closes [#217](https://github.com/ipfs/eslint-config-ipfs/issues/217)
+
 ## [6.0.2](https://github.com/ipfs/eslint-config-ipfs/compare/v6.0.1...v6.0.2) (2024-05-01)
 
 
