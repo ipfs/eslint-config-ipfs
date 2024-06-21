@@ -27,6 +27,7 @@ module.exports = {
     'no-return-await': 'off', // disable this rule to use @typescript-eslint/return-await instead
     '@typescript-eslint/return-await': ['error', 'in-try-catch'], // require awaiting thenables returned from try/catch
     'jsdoc/require-param': 'off', // do not require jsdoc for params
-    'jsdoc/require-param-type': 'off' // allow compiler to derive param type
+    'jsdoc/require-param-type': 'off', // allow compiler to derive param type
+    'no-undef': 'off' // typescript already checks for undefined variables so this is redundant - https://typescript-eslint.io/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
   }
 }
