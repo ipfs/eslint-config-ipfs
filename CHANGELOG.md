@@ -1,3 +1,10 @@
+## [7.0.2](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.1...v7.0.2) (2024-06-21)
+
+
+### Bug Fixes
+
+* turn off no-undef for ts files ([#229](https://github.com/ipfs/eslint-config-ipfs/issues/229)) ([c9ccaeb](https://github.com/ipfs/eslint-config-ipfs/commit/c9ccaeb3ee79e2b670c50f56fe10e5bb925785e3))
+
 ## [7.0.1](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.0...v7.0.1) (2024-06-21)
 
 
