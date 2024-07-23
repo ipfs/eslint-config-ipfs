@@ -1,3 +1,10 @@
+## [7.0.3](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.2...v7.0.3) (2024-07-23)
+
+
+### Bug Fixes
+
+* allow `any` args and referencing functions by property name ([#232](https://github.com/ipfs/eslint-config-ipfs/issues/232)) ([27ecf3e](https://github.com/ipfs/eslint-config-ipfs/commit/27ecf3e4055cd229339c62cc1a941e96a4e22852))
+
 ## [7.0.2](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.1...v7.0.2) (2024-06-21)
 
 
