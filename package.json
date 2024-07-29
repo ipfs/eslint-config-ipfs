@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ipfs",
-  "version": "7.0.5",
+  "version": "7.0.6",
   "description": "ESLint Shareable Config for IPFS project",
   "license": "Apache-2.0 OR MIT",
   "homepage": "https://github.com/ipfs/eslint-config-ipfs#readme",
