@@ -1,3 +1,9 @@
+## [7.0.5](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.4...v7.0.5) (2024-07-29)
+
+### Bug Fixes
+
+* pin eslint-plugin-jsdoc ([#235](https://github.com/ipfs/eslint-config-ipfs/issues/235)) ([977c9a4](https://github.com/ipfs/eslint-config-ipfs/commit/977c9a430388d500ba38662fcbc4aadf78db509d))
+
 ## [7.0.4](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.3...v7.0.4) (2024-07-23)
 
 ### Dependencies
