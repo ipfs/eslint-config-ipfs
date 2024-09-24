@@ -126,7 +126,7 @@
     "release": "aegir release"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
     "@typescript-eslint/parser": "^7.5.0",
     "eslint-config-love": "^47.0.0",
     "eslint-config-standard": "^17.1.0",
