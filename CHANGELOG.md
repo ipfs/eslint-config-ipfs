@@ -1,3 +1,17 @@
+## [8.0.0](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.6...v8.0.0) (2025-04-30)
+
+### ⚠ BREAKING CHANGES
+
+* type import style is now specified, re-run linting with `--fix` to patch up any rule violations
+
+### Features
+
+* define rules for consistent type import style ([#263](https://github.com/ipfs/eslint-config-ipfs/issues/263)) ([948ce47](https://github.com/ipfs/eslint-config-ipfs/commit/948ce47d83e7abaa9b7bba9cfbe014d01d2bdd69))
+
+### Trivial Changes
+
+* fix ci ([dbd1afc](https://github.com/ipfs/eslint-config-ipfs/commit/dbd1afcac462957df60a7cc38491ee4ce5c6a4bf))
+
 ## [7.0.6](https://github.com/ipfs/eslint-config-ipfs/compare/v7.0.5...v7.0.6) (2024-07-29)
 
 ### Bug Fixes
